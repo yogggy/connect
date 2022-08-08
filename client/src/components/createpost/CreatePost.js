@@ -11,7 +11,7 @@ const CreatePost = () => {
     image: "",
     caption: "",
   });
-  const [items, setItems] = useState([]);
+  // const [items, setItems] = useState([]);
   const onSubmitHandler = async (e) => {
     navigate("/");
     e.preventDefault();

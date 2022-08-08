@@ -23,23 +23,23 @@ const Login = () => {
 								src="./insta-logo.png"
 								alt=""
 							/>
-							<div class="form-floating mb-3">
+							<div className="form-floating mb-3">
 								<input
 									type="email"
-									class="form-control input-child"
+									className="form-control input-child"
 									id="floatingInput"
 									placeholder="name@example.com"
 								/>
-								<label for="floatingInput">Email ID</label>
+								<label htmlFor="floatingInput">Email ID</label>
 							</div>
-							<div class="form-floating input-child">
+							<div className="form-floating input-child">
 								<input
 									type="password"
-									class="form-control"
+									className="form-control"
 									id="floatingPassword"
 									placeholder="Password"
 								/>
-								<label for="floatingPassword">Password</label>
+								<label htmlFor="floatingPassword">Password</label>
 							</div>
                             <button className='login-btn input-child' type='submit'>Log In</button>
                             <div className='or-line'>
