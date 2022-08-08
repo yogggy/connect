@@ -4,6 +4,8 @@ import Header from './components/header/Header';
 import UserPost from './components/userPost/UserPost';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
+
+import CreatePost from './components/createpost/CreatePost';
 import { useEffect, useState } from 'react';
 
 function App() {
@@ -29,9 +31,10 @@ function App() {
   return (
    <>
    {/* <Header></Header> */}
-    <UserPost></UserPost>
-    {/* <Signup></Signup> */}
-    {/* <Login></Login> */}
+    {/* <UserPost></UserPost> */}
+    <CreatePost></CreatePost>
+    {/* <Signup></Signup>
+    <Login></Login> */}
    </>
   );
 }
