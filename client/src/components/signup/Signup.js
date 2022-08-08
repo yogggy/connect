@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './signup.css'
+import { Link } from 'react-router-dom'
 const Signup = () => {
 	const [value , setValues] = useState({
 		email:"",
@@ -127,7 +128,7 @@ const Signup = () => {
 							</form>
                             <div className='mt-4 '>
                                 <h6 className='py-1 mb-3'> Already Have Account ?</h6>
-                                <span className='login-btn p-2'> Log In </span>
+                              	<Link to='/' ><span className='login-btn p-2'>Log In</span>  </Link>
                             </div>
 						</div>
 					</div>
