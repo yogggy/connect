@@ -1,13 +1,14 @@
 
 import './App.css';
 import Header from './components/header/Header';
-import UserPost from './components/userPost/UserPost';
+import LandingPage from './components/landingPage/LandingPage';
 import Login from './components/login/Login';
 import Signup from './components/signup/Signup';
 
 import CreatePost from './components/createpost/CreatePost';
 import { useEffect, useState } from 'react';
-
+import Profile from './components/profiles/Profile';
+import {Switch , Route} from 'react-router-dom'
 function App() {
 
   const [stage, setStage] = useState('')
@@ -30,11 +31,22 @@ function App() {
  
   return (
    <>
-   {/* <Header></Header> */}
-    {/* <UserPost></UserPost> */}
-    <CreatePost></CreatePost>
-    {/* <Signup></Signup>
-    <Login></Login> */}
+   <Switch>
+   <Route exact path='/landingPage'>
+    <LandingPage></LandingPage>
+    </Route>
+    <Route exact path='/profile'>
+      <Profile></Profile>
+    </Route>
+   <Route exact path='/signup'>
+      <Signup></Signup>
+    </Route>
+    <Route exact path='/'>
+    <Login></Login>
+    </Route>
+
+   </Switch>
+   {/* <Header></Header> */}  
    </>
   );
 }
