@@ -1,0 +1,29 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  body{
+    background: url('../../../public/insta-bg.jpg') no-repeat center center/cover;
+  }
+.custom{
+    border-radius: 10px;
+    padding: 2% 5% 2% 5%;
+}
+.container1{
+    height: 100vh;
+    width: 100vw;
+}
+.box1{
+    margin: 10%;
+    padding: 10%;
+}
+.input-file input[type="file" i]::-webkit-file-upload-button{
+    background-color: white;
+    border: none;
+    border-radius: 10px; 
+    padding: 2% 5% 2% 5%;
+}
+.input{
+    border-radius: 10px;
+    padding: 2% 5% 2% 5%;
+    border: none;
+}

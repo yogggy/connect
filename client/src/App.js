@@ -8,7 +8,9 @@ import Signup from './components/signup/Signup';
 import CreatePost from './components/createpost/CreatePost';
 import { useEffect, useState } from 'react';
 import Profile from './components/profiles/Profile';
-import {Switch , Route} from 'react-router-dom'
+import {Routes , Route} from 'react-router-dom'
+
+
 function App() {
 
   const [stage, setStage] = useState('')
@@ -31,21 +33,13 @@ function App() {
  
   return (
    <>
-   <Switch>
-   <Route exact path='/landingPage'>
-    <LandingPage></LandingPage>
-    </Route>
-    <Route exact path='/profile'>
-      <Profile></Profile>
-    </Route>
-   <Route exact path='/signup'>
-      <Signup></Signup>
-    </Route>
-    <Route exact path='/'>
-    <Login></Login>
-    </Route>
-
-   </Switch>
+   <Routes>
+    <Route exact path="/" element={<Login/>}/>
+          <Route exact path="/signup" element={<Signup/>}/>
+          <Route exact path="/profile" element={<Profile/>}/>
+          <Route path="/landingPage" element={<LandingPage/>}/>
+          <Route path="/addpost" element={<CreatePost/>}/>
+   </Routes>
    {/* <Header></Header> */}  
    </>
   );
