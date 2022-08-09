@@ -1,0 +1,10 @@
+::-webkit-scrollbar {display:none;}
+
+.userInfodash{
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.accinfo1{
+    padding-left: 35%;
+}
